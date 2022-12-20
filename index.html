@@ -28,7 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <!-- icon 셋팅 구글 https://material.io/develop/web/getting-started 들어가서 위소스 복사붙이기 --> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- 브라우저는 위에서 아래로 읽기 때문에 main.css가 제일 마지막으로 읽혀지게 셋팅 -->
+    <!-- 브라우저는 위에서 아래로 읽기 때문에 main.css가 제일 마지막으로 읽혀지게 셋팅후, 이관시킨 common.css를 연결해서 사용하겠다 해서 링크태그로 연결함 -->
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <!-- javascript 라이브러리 연결  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -44,14 +45,17 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> 
    <!-- 유튜브영상 실행 외부라이브러리 연결 -->
-    <script defer src="./js/youtube.js"></script>
+   <script defer src="./js/youtube.js"></script>
    
    <!-- ScrolMagic javascript 라이브러리 cdn형식 이용해서 외부라이브러리 사용 -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
+   <!-- [singin 브렌치 ] main.js 에서 공통부분을 common.js에 옮겼다 그러므로 main.js 내용을 불러오기전에 common.js 스크립트를 먼저 실행후 main.js를 실행시키면 된다 -->
+   <script defer src="./js/common.js"></script>
    <script defer src="./js/main.js"></script> <!-- html이 모두 해석되고 그때 스크립트 실행시켜라 defer 사용 -->
-    <!-- 기본적인 프로젝트 셋팅  --> 
-</head>
+   <!-- 기본적인 프로젝트 셋팅 상단에 적용을 시킴  --> 
+
+  </head>
  <body> <!-- main.css에서 body 태그안에 스타일을 입혀두었다 [css상속개념]을 통해서 body태그 안에 모든요소들이 스타일을 입은상태 -->
     Hello world!
     <!-- <span class="material-icons">  // https://fonts.google.com/icons?selected=Material+Icons&icon.query=arrow 에서 코드붙여주기 클래스 이름은 일치
