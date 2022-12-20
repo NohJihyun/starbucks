@@ -1,0 +1,79 @@
+.signin {
+    margin-top: 120px;
+    padding: 100px 0 150px; /* 값이 3개 일시 상 중 하 */
+    background-image: url("../images/signin_bg.jpg");
+    background-repeat: no-repeat; /* 반복하지 않겠다 */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.signin h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.signin__card { /*.signin__card sign 해당하는 어떤 한부분으 card라는 의미 .signin .signin__card { .sigin 이름중복에 뒤쪽에 명시를 하고있어서 .signin 생략  */
+    width: 500px;
+    margin: 0 auto; /* 값이 2개면 첫번째는 위,아래 / 오른쪽은 좌,우 */
+    border-radius: 6px; /* 둥글게 적용 */
+    background-color: #f6f5f0;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .3); /* 그림자 적용 x축 y축 20px 흐림처리 그림자의 색상은 rgba 000 30% 블러효과 처리 */
+    color: #555;
+}
+.signin__card h2 { /*.signin에 card안에 들어있은 h2 태그 후손선택자 h2태그 */
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.signin__card h2 strong {
+    font-size: 700;
+    color: #006633;
+}
+.signin__card form {
+    padding: 30px 
+    22px; /* 내부여백 값2개면 첫번째 값 위,아래 두번째값 좌.우 */
+} 
+.signin__card form input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.signin__card form [type="submit"] { /* [type="submit"] 속성 선택자 */
+    background-color: #006633;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer; /* 버튼으로 만드는 과정이라고 생각하고 마우스 올릴시 손가락 모양으로 나오게 적용 */
+}
+.signin__card form p {
+    font-size: 12px;
+    color: #006633;
+    text-align: center;
+}
+.signin__card .actions { /* 플랙스 컨테이너 된다 */
+    display: flex; /* html단 a태그 수평정렬 */
+    border-top: 1px solid #ddd;
+}
+.signin__card .actions a { /* actions 플랙스컨테이너안에 들어있는  여기서 a 는 아이템이 된다 a 태그들을 뜻한다 */
+    flex-grow: 1; /* 요소의 증가 너비 1비율 a태그는 1:1:1 비율로 각각의 버튼이 만들어 진다고 생각하면 된다 */
+    flex-basis: 0; /* 기본너비는 0  없는 상태 */
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+.signin__card .actions a:last-child  { /* 해석 카드내부의 액션스내부의 a: 태그들 중에 마지막 a태그는 last-child */
+    border-right: none; /* 마지막 오른쪽 선을 제거 */
+}
+.signin__card .actions a:hover { /* a태그부분에 가상클래스선택자 :hover를 추가시킴 마우스를 올리면 적용된다 */
+    text-decoration: underline;
+}

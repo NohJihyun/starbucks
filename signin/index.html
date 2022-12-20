@@ -10,17 +10,17 @@
     <meta property="og:site_name" content="Starbucks" />
     <meta property="og:title" content="Starbucks Coffee Korea" />
     <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-    <meta property="og:image" content="./images/starbucks_seo.jpg" />
+    <meta property="og:image" content="../images/starbucks_seo.jpg" /> <!-- [singin] 상대경로 ./ 설정이 되어있는데 루트경로에서는 signin 폴더안 html 파일이니 ../ 밖으로 경로를 설정하였다 -->
     <meta property="og:url" content="https://starbucks.co.kr" />
     <!-- 트위터 카드 -->
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:site" content="Starbucks" />
     <meta property="twitter:title" content="Starbucks Coffee Korea" />
     <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-    <meta property="twitter:image" content="./images/starbucks_seo.jpg" /> <!-- imeages 폴더에 담겨있고  seo 는 검색엔진 최적화 -->
+    <meta property="twitter:image" content="../images/starbucks_seo.jpg" /> <!-- imeages 폴더에 담겨있고  seo 는 검색엔진 최적화 -->
     <meta property="twitter:url" content="https://starbucks.co.kr" />
     <!-- 상위 브라우저의 제목이 나오고 , favicon.ico가 있으면 옆에 로그가 나온다 -->
-    <link rel="icon" href="./favicon.png" /> <!-- favicon.ico 말고 다른로고 지정할시 사용 -->
+    <link rel="icon" href="../favicon.png" /> <!-- favicon.ico 말고 다른로고 지정할시 사용 -->
     <!-- css스타일 초기화 reset.css cdn  --> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <!-- 폰트연결 CSS선언방식 1.링크방식 병렬 html에서 외부 css 가져오기 2.import방식 직렬로 css에서 외부css가져오기 -->
@@ -28,34 +28,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <!-- icon 셋팅 구글 https://material.io/develop/web/getting-started 들어가서 위소스 복사붙이기 --> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- 브라우저는 위에서 아래로 읽기 때문에 main.css가 제일 마지막으로 읽혀지게 셋팅후, 이관시킨 common.css를 연결해서 사용하겠다 해서 링크태그로 연결함 -->
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- javascript 라이브러리 연결  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- gsap javascript 라이브러리 연결 배지 자연스럽게 연출 애니메이션라이브러리 적용 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- gsap javascript 라이브러리 연결 스크롤투플러그인 애니메이션 적용 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js" integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <!-- jacascript swiperjs 슬라이드 라이브러리 연결 인강 스타벅스예제 18강 아래에 min은 압축되었다라는 의미를 갖는다 javascript 파일과 css파일이 필요하다 -->
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />  -->
-   <!--  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>  -->
-   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />   -->
-   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> 
-   <!-- 유튜브영상 실행 외부라이브러리 연결 -->
-   <script defer src="./js/youtube.js"></script>
-   
-   <!-- ScrolMagic javascript 라이브러리 cdn형식 이용해서 외부라이브러리 사용 -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-   <!-- [singin 브렌치 ] main.js 에서 공통부분을 common.js에 옮겼다 그러므로 main.js 내용을 불러오기전에 common.js 스크립트를 먼저 실행후 main.js를 실행시키면 된다 -->
-   <script defer src="./js/common.js"></script>
-   <script defer src="./js/main.js"></script> <!-- html이 모두 해석되고 그때 스크립트 실행시켜라 defer 사용 -->
-   <!-- 기본적인 프로젝트 셋팅 상단에 적용을 시킴  --> 
-
-  </head>
+    <!-- 브라우저는 위에서 아래로 읽기 때문에 main.css가 제일 마지막으로 읽혀지게 셋팅한것은 브렌치 master 메인페이지일때 적용이고, 해당 로그인 페이지인 index.html 에서는 common.css와 연결한다 경로설정 확인-->
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/signin.css" />
+   <script defer src="../js/common.js"></script> <!-- html이 모두 해석되고 그때 스크립트 실행시켜라 defer 사용 common.js로 변경 하였다 -->
+    <!-- 기본적인 프로젝트 셋팅  --> 
+</head>
  <body> <!-- main.css에서 body 태그안에 스타일을 입혀두었다 [css상속개념]을 통해서 body태그 안에 모든요소들이 스타일을 입은상태 -->
     Hello world!
     <!-- <span class="material-icons">  // https://fonts.google.com/icons?selected=Material+Icons&icon.query=arrow 에서 코드붙여주기 클래스 이름은 일치
@@ -69,7 +47,7 @@
         <header>
              <div class="inner"> <!-- inner라는 클래스 갖고있는 div 태그생성 -->
              <a href="/" class="logo"> <!-- <a href="도메인/index.htnml"> 도메인이 생략되어 있음 /index.html 파일이 실행될구조 --> <!-- /기호가 있다는것은 절대경로(우리의 페이지 메인페이지로 이동하겠다) -->
-                 <img src="./images/starbucks_logo.png" alt="STARBUCKS"/> <!-- 스타벅스로고 사용하기 /대체속성 필수 alt -->
+                 <img src="../images/starbucks_logo.png" alt="STARBUCKS"/> <!-- 스타벅스로고 사용하기 /대체속성 필수 alt -->
              </a>
             
             <!-- 두번째 작업 [헤더와 드롭다운 메뉴-서브메뉴]  
@@ -78,7 +56,7 @@
             -->
             <div class="sub-menu">
                  <ul class="menu"> <!-- 서브메뉴-첫번째작업-->
-                    <li>
+                     <li>                              <!-- a here="도메인/signin/index.html" 앞 도메인 뒤 index.html 생략되어 있다.-->
                          <a href="/signin">Sign In</a> <!-- 서브메뉴 세번째작업 sign in을 클릭시 / 앞에 도메인 주소 생략 / 절대경로 사용 // 구현할 주소를 명확히 제시 signin -->
                     </li>
                     <li>
@@ -410,302 +388,33 @@
 
             
             </div>
-               <!-- 네번째 작업[헤더와 드롭다운 메뉴-전역 배지] 
-              
-               -->
-               <div class="badges">
-                <div class="badge">
-                  <img src="./images/badge3.jpg" alt="Badge">
-                </div>
-                <div class="badge">
-                  <img src="./images/badge2.jpg" alt="Badge">
-                </div>
-               </div>
         </header> <!-- 싸이트에 헤더 영역이다 기능적으로 역할하지 않는다 -->
-
-        <!-- 다섯번째 작업 [순차적 애니메이션 - 전역] section 비쥬얼영역 작업
-              VISUAL
-         -->
-         <section class="visual"> 
-            <div class="inner"><!-- 가운데정렬  --> 
-               
-              <div class="title fade-in"><!-- fide in 추가 서서히 나타난다라는 뜻  -->
-                  <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" /> <!-- 빈테그니까 / 추가 -->
-                  <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a> <!-- javascript:void(0) 실제로 동작하지 않음 , 버튼5가지 css선택자로 작업해둠 btn--brown -->
-                </div>
-                <div class="fade-in">
-                  <img src="./images/visual_cup1.png" alt="new OATMEAL LATTE" class="cup1 image" /> <!-- cup1 image , cup1 text 세트 -->
-                  <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
-                </div>
-                <div class="fade-in">
-                  <img src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" class="cup2 image" /> <!-- cup2 image , cup2 text 세트 -->
-                  <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
-                </div>
-                <div class="fade-in">
-                  <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
-                </div>
-             </div>
-         </section>
-
-         <!-- 
-          여섯번째 작업 [요소슬라이드] - 공지사항 
-         -->
-         <section class="notice">
-          
-          <div class="notice-line">
-            <div class="bg-left"></div>
-            <div class="bg-right"></div>
-            <div class="inner">
-              
-              <div class="inner__left"> <!-- inner안에서 라이트 레프트 나누기 -->
-              <h2>공지사항</h2>
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                  <a href="javascript:void(0)">크리스마스 & 연말연시 매장 영엽시간 변경 안내</a>  
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a>  
-                    </div>
-                    <div class="swiper-slide">
-                      <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트안내</a>  
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a>  
-                        </div>
-                </div>
-              </div>      
-                 <a href="javascript:void(0)" class="notice-line__more">
-                  <div class="material-icons">add_circle</div> <!-- 주의사항 icon에s붙이기 material Symbols 싸이트에 클래스 만들어 두었기 때문에 add_circle만 추가 -->
-                 </a>
-              </div>
-              <div class="inner__right">
-                <h2>스타벅스 프로모션</h2>
-                <!-- 
-                   8번째 작업[요소슬라이드] - 영역토글 토글요소를 클릭하면 하단에 만든 promotion 영역전체를 수직으로 닫거나 다시 열어주는 작업
-                 -->
-                <div class="toggle-promotion"> <!-- toggle-promotion 하나의 버튼 -->
-                  <div class="material-icons">upload</div>
-                </div>
-              </div>
-            </div>
-           </div> <!-- <div class="notice-line"> 공지사항라인 마무리 후 형제요소로 promotion 하단에 만들어준다 -->
-          <!-- 
-            일곱번째 작업 [요소슬라이드] - 공지사항 - 중간사진 슬라이드
-        
-            PROMOTION -->
-        <div class="promotion">
-
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
-                <a href="javascript:void(0)" class="btn">자세히 보기</a>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
-                <a href="javascript:void(0)" class="btn">자세히 보기</a>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
-                <a href="javascript:void(0)" class="btn">자세히 보기</a>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
-                <a href="javascript:void(0)" class="btn">자세히 보기</a>
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
-                <a href="javascript:void(0)" class="btn">자세히 보기</a>
-              </div>
+        <!--  
+            브렌치 master에 있는 index.html 파일을 전부 복사해서 브렌치 signin에 붙인후 불필요한 소스 제거후 로그인 페이지 만들기
+            * 로그인 페이지 *
+        -->
+        <section class="signin">
+          <h1>로그인</h1>
+          <div class="signin__card">
+            <h2>
+             <strong> Welcome!</strong> 스타벅스에 오신 것을 환영합니다.
+            </h2>
+            <form>
+              <input type="text" placeholder="아이디를 입력하세요." />
+              <input type="password" placeholder="비밀번호를 입력하세요." />
+              <input type="submit" value="로그인" />
+              <p>
+                * 비밀번호를 타 사이트와 같이 상용할 경우 도용 위험이 있으니,<br />
+                정기적으로 비밀번호를 변경하세요!
+              </p>
+            </form>
+            <div class="actions">
+              <a href="javascript:void(0)">회원가입</a>
+              <a href="javascript:void(0)">아이디 찾기</a>
+              <a href="javascript:void(0)">비밀번호 찾기</a>
             </div>
           </div>
-          <!-- 
-             [요소슬라이드] 중간사진 버튼작업 페이지 넘기기 이전 / 다음
-           -->
-          <div class="swiper-pagination"></div>
-          <div class="swiper-prev">
-            <div class="material-icons">arrow_back</div>
-          </div>
-          <div class="swiper-next">
-            <div class="material-icons">arrow_forward</div>
-          </div>
-         </div>
-         </section>
-         <!-- 
-            9번째작업    유튜브 영상 배경 리워즈 
-         -->
-    <!--REWARDS-->
-  <!--REWARDS-->
-  <section class="rewards">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
-    <div class="inner">
-
-      <div class="btn-group">
-        <div class="btn btn--reverse sign-up">회원가입</div>
-        <div class="btn sign-in">로그인</div>
-        <div class="btn gift">e-Gift 선물하기</div>
-      </div>
-
-    </div>
-  </section>
-    <!-- 
-        9번째작업    유튜브 영상 배경 리워즈 
-                      2번째 YOUTUBE VIDEO  
-           -->    
-  <!-- YOUTUBE VIDEO 구조 기억하기 !! -->
-  <!--YOUTUBE VIDEO-->
-  <section class="youtube">
-    <div class="youtube__area">
-      <div id="player"></div>
-    </div>
-    <div class="youtube__cover"></div>
-    <!-- youtube__cover 안에다가 inner 만들어서 둥둥떠다니는 이미지 추가 애니메이션 추가 -->
-    <div class="inner">
-      <img src="./images/floating1.png" alt="Icon" class="floating floating1" />
-      <img src="./images/floating2.png" alt="Icon" class="floating floating2" />
-      <!-- <img src="./images/floating3.png" alt="Icon" class="floating floating3" />  3번째 이미지가 잘리는 해결책은 이 소스를 하단 product쪽에 배치한다 -->
-    </div> 
-  </section>
-<!-- 
-        10번째작업 고정 이미지 배경
-        SEASON PRODUCT , RESERVE COFFEE
-
-        *** 스크롤 위치 계산 애니메이션 javascript 외부라이브러리 스크롤매직 연동 scroll-spy 추가 scroll-spy 클래스와 main.js  ***
-      -->
-<section class="season-product scroll-spy"> <!-- show javascript 라이브러리가 show를 부여해준다 -->
-  <div class="inner">
-    <!-- 이미지를 hidden을 피해서 다음 section에 적용하기 -->
-    <img src="./images/floating3.png" alt="Icon" class="floating floating3" /> 
-    <img src="./images/season_product_image.png" alt="" class="product back-to-position to-right delay-0"/> <!-- season_product_image 요소는 back-to-position 클래스를 통해 투명상태 위치는 왼쪽으로 이동된 상태 to-right -->
-    <div class="text-group">
-      <img src="./images/season_product_text1.png" alt="" class="title back-to-position to-left delay-1" />
-      <img src="./images/season_product_text2.png" alt="" class="description back-to-position to-left delay-2" />
-      <div class="more back-to-position to-left delay-3"> <!-- back-to-position과 btn의 전환효과를 분리하기 위해서 more라는 div영역을 별도로 만들었다 -->
-        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- RESERVE COFFEE  -->
-<section class="reserve-coffee scroll-spy">
-  <div class="inner">
-
-    <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
-    <div class="text-group">
-      <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1" />
-      <div class="more back-to-position to-right delay-2">
-         <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a> <!-- btn--gold 버튼의 상태가 골드이다. 버튼색 달람짐 -->  
-      </div>
-    </div>
-    <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-3" />
-
-  </div>
-</section>
-<!-- PICK YOUR FAVORITE  -->
-  <section class="pick-your-favorite scroll-spy">
-    <div class="inner">
-      <div class="text-group">
-        <img src="./images/favorite_text1.png" alt="" class="title back-to-position to-right delay-0" />
-        <img src="./images/favorite_text2.png" alt="" class="description back-to-position to-right delay-1" />
-      <div class="more back-to-position to-right delay-2">
-        <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a> <!-- btn--gold 버튼의 상태가 화이트다. 버튼색 달라짐 -->  
-      </div>
-      </div>
-    </div>
-  </section>
-<!-- 
-    11번째 작업 3D 애니메이션
-    RESERVE STORE 
--->
-  <section class="reserve-store">
-    <div class="inner">
-
-      <div class="medal">
-          <div class="front">
-              <img src="./images/reserve_store_medal_front.png" alt="">
-          </div>
-            <div class="back">
-              <img src="./images/reserve_store_medal_back.png" alt="">
-              <a href="javascript:void(0)" class="btn">
-                매장안내
-              </a>
-            </div>
-          </div>
-       
-        </div>
-  </section>
-    <!-- 
-    12번째 작업 스크롤 위치 계산 - 애니메이션(1) , 애니메이션(2)
-    FIND THE STORE 
-    -->
-    <section class="find-store scroll-spy">
-      <div class="inner">
-        <img src="./images/find_store_texture1.png" art="" class="texture1" />
-        <img src="./images/find_store_texture2.png" art="" class="texture2" />
-        <img src="./images/find_store_picture1.jpg" alt="" class="picture picture1 back-to-position to-right delay-0" /><!-- 분리할 내용을 만들기 위해서 공통클래스 뒤에 클래스를 넣어준다 -->
-        <img src="./images/find_store_picture2.jpg" alt="" class="picture picture2 back-to-position to-right delay-1" />
-    
-    
-      <div class="text-group">
-        <img src="./images/find_store_text1.png" alt="" class="title back-to-position to-left delay-0" />
-        <img src="./images/find_store_text2.png" alt="" class="description back-to-position to-left delay-1" />
-        <div class="more back-to-position to-left delay-2">
-          <a href="javascript:void(0)" class="btn">매장찾기</a>
-        </div>
-      </div>
-      </div>
-    </section>
-     <!-- 
-     13번째 다중 요소 슬라이드 AWARDS , swiper js  이전, 다음 버튼
-    -->
-    <section class="awards">
-      <div class="inner">
-        
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/awards_slide1.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide2.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide3.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide4.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide5.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide6.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide7.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide8.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide9.jpg" alt="" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/awards_slide10.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      <div class="swiper-prev">
-        <div class="material-icons">arrow_back</div>
-      </div>
-      <div class="swiper-next">
-        <div class="material-icons">arrow_forward</div>
-      </div>
-    
-    </div>
-    </section>
+        </section>
     <!-- 
      14번째 푸터 FOOTER 라는 하단 section영역
     -->
@@ -737,7 +446,7 @@
         <p class="copyright">
           &copy; <span class="this-year"></span> Starbucks Coffee Company. All Rights Reserved.
         </p>
-        <img src="./images/starbucks_logo_only_text.png" alt="STAR BUCKS" class="logo" />
+        <img src="../images/starbucks_logo_only_text.png" alt="STAR BUCKS" class="logo" />
   
       </div>
     </footer>
@@ -745,10 +454,5 @@
      15번째 푸터 FOOTER에 페이지 상단으로 이동, 상단으로 이동버튼 애니메이션 처리
     HTML 고유하게 사용한다 명시하려고 id로 설정하였다
     -->
-  <div id="to-top">
-    <div class="material-icons">arrow_upward</div>
-  </div>
-
-
   </body>
 </html>  
